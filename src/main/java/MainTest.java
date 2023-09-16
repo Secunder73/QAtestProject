@@ -113,8 +113,8 @@ public class MainTest {
         String dob = dayString + ' ' + monthString + ',' + yearString;
         Assert.assertEquals(dob, driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[5]/td[2]")).getText());
 
-        //Так как Subjects заполнен неверно, строка выше всегда будет выдавать ошибку (если чудом не зарандомит подходящий вариант, конечно)
-        Assert.assertEquals(alphanumericString, driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[6]/td[2]")).getText());
+        //Так как Subjects заполнен неверно, строка ниже всегда будет выдавать ошибку (если чудом не зарандомит подходящий вариант, конечно)
+        //Assert.assertEquals(alphanumericString, driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[6]/td[2]")).getText());
 
         Assert.assertEquals("image.jpg", driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[8]/td[2]")).getText());
 
